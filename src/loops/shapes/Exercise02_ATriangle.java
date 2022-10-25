@@ -1,0 +1,26 @@
+package loops.shapes;
+
+import sun.font.FontRunIterator;
+
+import java.sql.SQLOutput;
+
+public class Exercise02_ATriangle {
+    public static void main(String[] args) {
+        /*
+        Write a program that prints below triangle
+        A
+        AA
+        AAA
+        AAAA
+        AAAAA
+        AAAAAA
+         */
+
+        for (int i = 1; i <= 6; i++){
+            for (int j = 1; j <= i ; j++) {
+                System.out.print("A");
+            }
+            System.out.println();
+        }
+    }
+}
