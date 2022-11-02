@@ -193,4 +193,6 @@ public class Homework07 {
         System.out.println("Elements that are odd and less than 20 = " + oddAndLessThan20);
         System.out.println("Elements that are less than 15 or greater than 50 = " + lessThan15OrGreaterThan50);
     }
+
+
 }
