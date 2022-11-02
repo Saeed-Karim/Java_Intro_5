@@ -7,7 +7,7 @@ import java.util.Vector;
 
 public class Homework07 {
     public static void main(String[] args) {
-        System.out.println("\n---Task 1---\n");
+        System.out.println("\n-----------Task 1-----------\n");
 
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(10);
@@ -22,8 +22,7 @@ public class Homework07 {
         System.out.println(numbers);
 
 
-        System.out.println("\n---Task 2---");
-
+        System.out.println("\n-----------Task 2-----------\n");
         ArrayList<String> colors = new ArrayList<>();
 
         colors.add("Blue");
@@ -39,8 +38,7 @@ public class Homework07 {
         System.out.println(colors);
 
 
-        System.out.println("\n---Task 3---");
-
+        System.out.println("\n-----------Task 3-----------\n");
         ArrayList<Integer> number = new ArrayList<>();
 
         number.add(23);
@@ -56,8 +54,7 @@ public class Homework07 {
         System.out.println(number);
 
 
-        System.out.println("\n---Task 4---");
-
+        System.out.println("\n-----------Task 4-----------\n");
         ArrayList<String> cities = new ArrayList<>();
 
         cities.add("Istanbul");
@@ -71,8 +68,7 @@ public class Homework07 {
         System.out.println(cities);
 
 
-        System.out.println("\n---Task 5---");
-
+        System.out.println("\n-----------Task 5-----------\n");
         ArrayList<String> marvelChars = new ArrayList<>();
 
         marvelChars.add("Spider Man");
@@ -89,8 +85,7 @@ public class Homework07 {
         System.out.println(marvelChars.containsAll(marvelContains));
 
 
-        System.out.println("\n---Task 6---");
-
+        System.out.println("\n-----------Task 6-----------\n");
         ArrayList<String> avengers = new ArrayList<>();
 
         avengers.add("Hulk");
@@ -109,8 +104,7 @@ public class Homework07 {
         System.out.println(avengers.containsAll(avengersContains));
 
 
-        System.out.println("\n---Task 7---");
-
+        System.out.println("\n-----------Task 7-----------\n");
         ArrayList<Character> chars = new ArrayList<>();
 
         chars.add('A');
@@ -130,8 +124,7 @@ public class Homework07 {
         }
 
 
-        System.out.println("\n---Task 8---");
-
+        System.out.println("\n-----------Task 8-----------\n");
         ArrayList<String> objects = new ArrayList<>();
 
         objects.add("Desk");
@@ -156,8 +149,7 @@ public class Homework07 {
         System.out.println(notContainsAorE);
 
 
-        System.out.println("\n---Task 9---");
-
+        System.out.println("\n-----------Task 9-----------\n");
         ArrayList<String> kitchen = new ArrayList<>();
         kitchen.add("Plate");
         kitchen.add("spoon");
@@ -182,7 +174,7 @@ public class Homework07 {
         System.out.println("Elements starting or ending with P or p = " + startingEndingWithP);
 
 
-        System.out.println("\n---Task 10---");
+        System.out.println("\n-----------Task 10-----------\n");
         Integer[] arr = {3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78};
         ArrayList<Integer> numbers1 = new ArrayList<>();
         Collections.addAll(numbers1, arr);
