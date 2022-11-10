@@ -1,5 +1,6 @@
 package string_methods;
 
+
 public class _01_valueOf_Method {
     public static void main(String[] args) {
 
@@ -16,6 +17,14 @@ public class _01_valueOf_Method {
 
         System.out.println(num + 5); // 125 + 5 -> 130
         System.out.println(numString + 5); // 125 + 5 -> 1255
+
+        System.out.println("NEW");
+
+        System.out.println(num);
+        System.out.println(numString);
+
+
+
 
 
 

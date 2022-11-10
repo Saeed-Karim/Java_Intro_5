@@ -22,13 +22,13 @@ public class _01_StringArray {
         /*
         Assign Belguim to index of 2 and print the array once again
 
-        [null, Spain, Belguim]
+        [null, Spain, Belgium]
          */
 
-        countries[2] = "Belguim";
-        System.out.println(Arrays.toString(countries));
+        countries[2] = "Belgium";
+        System.out.println(Arrays.toString(countries)); // [null, Spain, Belgium]
 
-        // 5.) Update existing element // [null, France, Belguim]
+        // 5.) Update existing element // [null, France, Belgium]
         countries[1] = "France";
         System.out.println(Arrays.toString(countries));
 

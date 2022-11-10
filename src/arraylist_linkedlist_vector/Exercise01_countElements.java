@@ -40,16 +40,13 @@ public class Exercise01_countElements {
         }
 
         /*
-Count the elements that has length of 6
-
-EXPECTED:
-2
- */
+        Count the elements that has length of 6
+        EXPECTED:
+        2
+         */
 
         System.out.println("\n------TASK-2 - Elements that has length of 6-------\n");
 
-
-        System.out.println("\n----------FOR EACH----------\n");
         int count6 = 0;
 
         for (String color : colors) {
@@ -57,8 +54,6 @@ EXPECTED:
         }
 
         System.out.println(count6); // 2
-
-        System.out.println("\n----------FOR I----------\n");
 
         count6 = 0; // Resetting your counter
 
@@ -68,49 +63,30 @@ EXPECTED:
 
         System.out.println(count6); // 2
 
+
         /*
         Count the elements has 'o'
         //Brown and Yellow
-
         EXPECTED:
         2
          */
 
         System.out.println("\n------TASK-3 - Elements that has 'o'-------\n");
 
-        System.out.println("\n----------FOR EACH----------\n");
+        int countO = 0;
 
-       int countO = 0;
-
-        for (String color : colors) {
-        if (color.contains("o"))  countO++;
+        for (String element : colors) {
+            if(element.toLowerCase().contains("o")) countO++;
         }
-        System.out.println(countO);
 
-        System.out.println("\n----------FOR I----------\n");
+        System.out.println(countO);
 
         countO = 0;
+
         for (int i = 0; i < colors.size(); i++) {
-            if (colors.get(i).toLowerCase().contains("o")) countO++;
+            if(colors.get(i).toLowerCase().contains("o")) countO++;
         }
+
         System.out.println(countO);
-
-
-
-
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
     }
+}

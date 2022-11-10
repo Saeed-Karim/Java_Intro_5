@@ -74,7 +74,7 @@ public class Homework05 {
 
         System.out.println("\n---------------Task-7---------------\n");
 
-        String name = ScannerHelper.getFullName();
+        String name = ScannerHelper.getAFullName();
 
         int vowel = 0;
 

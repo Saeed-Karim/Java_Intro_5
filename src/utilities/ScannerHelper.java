@@ -3,16 +3,14 @@ package utilities;
 import java.util.Scanner;
 
 public class ScannerHelper {
-    public static void main(String[] args) {
 
-    }
     static Scanner input = new Scanner(System.in);
 
-/*
-Create a method that asks user to enter a name and RETURN it
- */
+    /*
+    Create a method that asks user to enter a name and RETURN it
+     */
 
-    public static String getAName() {
+    public static String getAName(){
         System.out.println("Please enter a name:");
         String name = input.nextLine();
 
@@ -20,11 +18,11 @@ Create a method that asks user to enter a name and RETURN it
     }
 
 
-/*
-Create a method that asks user to enter an age and RETURN it
- */
+    /*
+    Create a method that asks user to enter an age and RETURN it
+     */
 
-    public static int getAnAge() {
+    public static int getAnAge(){
         System.out.println("Please enter an age:");
         int age = input.nextInt();
         input.nextLine();
@@ -32,11 +30,11 @@ Create a method that asks user to enter an age and RETURN it
         return age;
     }
 
-/*
-Create a method that asks user to enter an address and RETURN it
- */
+    /*
+    Create a method that asks user to enter an address and RETURN it
+     */
 
-    public static String getAnAddress() {
+    public static String getAnAddress(){
         System.out.println("Please enter an address:");
         String address = input.nextLine();
 
@@ -48,9 +46,12 @@ Create a method that asks user to enter an address and RETURN it
         return input.nextLine();
     }
 
-    public static String getFavoriteColors(){
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter your favorite colors: ");
+    /*
+    Create a method that asks user to enter 4 favorite colors and RETURN it
+     */
+
+    public static String getFavColors(){
+        System.out.println("Please enter 4 of your favorite colors");
         String favColors = input.nextLine();
 
         return favColors;
@@ -64,22 +65,24 @@ Create a method that asks user to enter an address and RETURN it
         return num;
     }
 
-    public static String getFullName(){
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter your full name: ");
-        String fName = input.nextLine();
+    public static String getAFullName(){
+        System.out.println("Please enter a full name:");
+        String fullName = input.nextLine();
 
-        return fName;
+        return fullName;
     }
 
+    public static String favMovie(){
+        System.out.println("What is your favorite movie? ");
+        String favMovie = input.nextLine();
 
+        return favMovie;
+    }
 
+    public static String getFavoriteColors(){
+        System.out.println("What are your favorite Colors? ");
+        String favColors = input.nextLine();
 
-
-
+        return getFavoriteColors();
+    }
 }
-
-
-
-
-

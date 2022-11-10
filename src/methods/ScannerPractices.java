@@ -13,8 +13,12 @@ public class ScannerPractices {
          */
 
 
-        System.out.println(ScannerHelper.getAName() + "'s age is " + ScannerHelper.getAnAge() + "." +
-                "\nAddress is " + ScannerHelper.getAnAddress());
+       // System.out.println(ScannerHelper.getAName() + "'s age is " + ScannerHelper.getAnAge() + "." +
+         //       "\nAddress is " + ScannerHelper.getAnAddress());
+
+        System.out.println(ScannerHelper.getAFullName() + "'s age is " + ScannerHelper.getAnAge() + "." +
+                "\n Address is " + ScannerHelper.getAnAddress());
+
 
     }
     }
