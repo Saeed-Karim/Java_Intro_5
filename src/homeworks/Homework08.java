@@ -9,15 +9,15 @@ import java.util.regex.Pattern;
 public class Homework08 {
     public static void main(String[] args) {
         System.out.println("---Task 1---");
-        System.out.println(countConsonants("hello"));
+        System.out.println(countConsonants("Adventure"));
 
 
         System.out.println("\n---Task 2---");
-        System.out.println(wordArray("Hello, nice to meet you!!"));
+        System.out.println(wordArray("Hello, My name is Chika Chika Slim Shady!"));
 
 
         System.out.println("\n---Task 3---");
-        System.out.println(removeExtraSpaces("java is  fun"));
+        System.out.println(removeExtraSpaces("Pardon  me,  do  you have any Grey    Poupon?"));
 
 
         System.out.println("\n---Task 4---");
@@ -25,11 +25,11 @@ public class Homework08 {
 
 
         System.out.println("\n---Task 5---");
-        System.out.println(isDateFormatValid("1/21/1999"));
+        System.out.println(isDateFormatValid("07/05/1985"));
 
 
         System.out.println("\n---Task 6---");
-        System.out.println(isEmailFormatValid("aj@gmail.com"));
+        System.out.println(isEmailFormatValid("SaeedK11@aol.com"));
 
     }
     //Task 1
