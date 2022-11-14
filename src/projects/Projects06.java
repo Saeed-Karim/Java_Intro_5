@@ -21,7 +21,7 @@ public class Projects06 {
         validatePassword("Saeed@123");
 
         System.out.println("\n-----------TASK 4-----------\n");
-        System.out.println(emailIsValid("JavaIsGr8et@school.com"));
+        System.out.println(emailIsValid("JavaIsGr8!@school.com"));
 
 
 
