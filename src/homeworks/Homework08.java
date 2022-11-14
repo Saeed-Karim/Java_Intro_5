@@ -8,27 +8,27 @@ import java.util.regex.Pattern;
 
 public class Homework08 {
     public static void main(String[] args) {
-        System.out.println("---Task 1---");
+        System.out.println("\n-----------Task 1-----------\n");
         System.out.println(countConsonants("Adventure"));
 
 
-        System.out.println("\n---Task 2---");
+        System.out.println("\n-----------Task 2-----------\n");
         System.out.println(wordArray("Hello, My name is Chika Chika Slim Shady!"));
 
 
-        System.out.println("\n---Task 3---");
+        System.out.println("\n-----------Task 3-----------\n");
         System.out.println(removeExtraSpaces("Pardon  me,  do  you have any Grey    Poupon?"));
 
 
-        System.out.println("\n---Task 4---");
+        System.out.println("\n-----------Task 4-----------\n");
         System.out.println(count3OrLess());
 
 
-        System.out.println("\n---Task 5---");
+        System.out.println("\n-----------Task 5-----------\n");
         System.out.println(isDateFormatValid("07/05/1985"));
 
 
-        System.out.println("\n---Task 6---");
+        System.out.println("\n-----------Task 6-----------\n");
         System.out.println(isEmailFormatValid("SaeedK11@aol.com"));
 
     }
