@@ -68,14 +68,7 @@ public class Homework08 {
         while(match.find()){
             counter++;
         }
-        /* Other Way of completing this task EXPLAIN THIS WAY FOR HELPING PEOPLE
-        str = str.replaceAll("[^A-Za-z ]", "");
-        String[] arr = str.split(" ");
 
-        for (String s : arr) {
-            if(s.length() <= 3) counter++;
-        }
-         */
         return counter;
     }
 
