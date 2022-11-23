@@ -46,7 +46,7 @@ public class Homework09 {
         System.out.println("\n-----------TASK 3-----------\n");
 
         ArrayList<Integer> numbers1 = new ArrayList<>();
-        int nums[] = {-4, 0, -7, 0, 5, 10, -7, 0};
+        int[] nums = {-4, 0, -7, 0, 5, 10, -7, 0};
         loop1:
         {
             for (int i = 0; i < nums.length; i++) {
