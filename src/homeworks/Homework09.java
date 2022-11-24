@@ -2,114 +2,113 @@ package homeworks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
+import java.util.Collections;
+import java.util.Locale;
 
 public class Homework09 {
     public static void main(String[] args) {
+        System.out.println("\n==========TASK01==========\n");
+        int[] numbers = {3, 4, 3, 3, 5, 5, 6, 6, 7};
+        ArrayList<Integer> numbersList = new ArrayList<>();
+        for (int number : numbers) {
+            if (numbersList.contains(number)) {
+                System.out.println(number);
+                break;
+            }
+            else numbersList.add(number);
 
+        }
 
-        System.out.println("\n-----------TASK 1-----------\n");
-        String repeaters = "There is no duplicates";
-        int numbers[] = {-4, 0, -7, 9, 5, 10, 89, 45};
-        loop:
-        {
-            for (int i = 0; i < numbers.length; i++) {
-                for (int j = i + 1; j < numbers.length; j++) {
-                    if (numbers[i] == numbers[j]) {
-                        repeaters = String.valueOf(numbers[i]);
-                        break loop;
-                    }
+/*
+        boolean isFound = false;
+        for (int i = 0; i < numbers.length-1; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
+                if(numbers[i] == numbers[j] && !isFound) {
+                    isFound = true;
+                    System.out.println(numbers[i]);
+                    break;
                 }
             }
         }
-        System.out.println(repeaters);
+ */
 
+        System.out.println("\n==========TASK04==========\n");
 
-      System.out.println("\n-----------TASK 2-----------\n");
+        String[] stringArr = {"a" , "xYz", "B",};
+        ArrayList<String> dup = new ArrayList<>();
 
-        String[] words = {"Z", "abc", "z", "123", "#"};
-        String duplicate = "There is no duplicates";
-       loop1:
-        {
-            for (int i = 0; i < words.length; i++) {
-                for (int j = i + 1; j < words.length; j++) {
-                   if (words[i].equalsIgnoreCase(words[j])){
-                       duplicate = words[i];
-                       break loop1;
-                   }
-                }
-           }
-       }
-        System.out.println(duplicate);
-
-
-        System.out.println("\n-----------TASK 3-----------\n");
-
-        ArrayList<Integer> numbers1 = new ArrayList<>();
-        int[] nums = {-4, 0, -7, 0, 5, 10, -7, 0};
-        loop1:
-        {
-            for (int i = 0; i < nums.length; i++) {
-                for (int j = i + 1; j < nums.length; j++) {
-                    if (nums[i] == nums[j]) {
-                        numbers1.add(nums[i]);
-                    }
+        for (int i = 0; i < stringArr.length - 1; i++) {
+            for (int j = i + 1; j < stringArr.length; j++) {
+                if(stringArr[i].equalsIgnoreCase(stringArr[j]) && !dup.contains(stringArr[i].toLowerCase())) {
+                    dup.add(stringArr[i].toLowerCase());
+                    System.out.println(stringArr[i]);
                 }
             }
         }
-        if(numbers1.size() == 0) System.out.println("There is no duplicates");
-        else{
-            for (int num:
-                    numbers) {
-                System.out.println(num);
-            }
+
+        if(dup.size() == 0) System.out.println("There is no duplicates");
+
+
+
+
+
+
+        /*
+        for (String s : stringArr) {
+            if(!container.contains(s.toLowerCase()) || !container.contains(s.toUpperCase()))
+                container.add(s);
         }
+         */
 
-        System.out.println("\n-----------TASK 4-----------\n");
 
-        ArrayList<String> strSet = new ArrayList<>();
-        String[] wordz = {"A", "foo", "12", "Foo", "bar", "a", "a" };
-        loop1:
-        {
-            for (int i = 0; i < wordz.length; i++) {
-                for (int j = i + 1; j < wordz.length; j++) {
-                    if (wordz[i].equalsIgnoreCase(wordz[j])){
-                        strSet.add(wordz[i]);
-                    }
-                }
-            }
+
+
+        System.out.println("\n==========TASK05==========\n");
+        String[] arr = {"a", "b", "c", "d", "e", "f"};
+        Collections.reverse(Arrays.asList(arr));
+        System.out.println(Arrays.toString(arr));
+
+
+
+        /*
+        Way 1:
+        storage = a , b, c
+        //first i = [f, b, c, d, e, a]
+        //sec i = [f, e, c, d, b, a]
+        //third i = [f, e, d, c, b, a]
+        int firstIndex = 0;
+        int lastIndex = arr.length-1;
+        String storage;
+        while(firstIndex<lastIndex){
+            storage = arr[firstIndex];
+            arr[firstIndex] = arr[lastIndex];
+            arr[lastIndex] = storage;
+            firstIndex++;
+            lastIndex--;
         }
-        if(strSet.size() == 0) System.out.println("There is no duplicates");
-        else{
-            for (String word: strSet) {
-                System.out.println(Arrays.toString(wordz));
-            }
+        System.out.println(Arrays.toString(arr));
+        Way 2:
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = arr.length-1; i >= 0 ; i--) {
+            list.add(arr[i]);
         }
+        System.out.println(list);
+         */
 
 
-        System.out.println("\n-----------TASK 5-----------\n");
 
-        String[] word = {"abc","foo","bar", "arkansas", "iowa", "alabama", "elliot"};
-        String[] words1 = new String[word.length];
-        for (int i = word.length - 1; i >= 0; i--) {
-            words1[word.length - 1 - i] = word[i];
+        System.out.println("\n==========TASK06==========\n");
+        String str = "Java is fun"; //[java, is, fun]
+        String strReversed = "";
+
+        String[] strArr = str.split("[ ]+"); // [Java, is, fun]
+
+        for (String s : strArr) {
+            strReversed += new StringBuilder(s).reverse() + " ";
         }
-        System.out.println(Arrays.toString(words1));
+        System.out.println(strReversed.trim());
 
 
-
-        System.out.println("\n-----------TASK 6-----------\n");
-
-        String d = "Java is fun", temp, finalStr = "";
-        String[] str4 = d.split(" ");
-        for (String s: str4) {
-            temp = "";
-            for (int i = s.length() - 1; i >= 0; i--) {
-                temp += s.charAt(i);
-            }
-            finalStr += temp + " ";
-        }
-        System.out.println(finalStr.substring(0, finalStr.length() - 1));
 
     }
 }
