@@ -1,4 +1,4 @@
-package Homework12;
+package homeworks;
 
 import java.util.Arrays;
 
@@ -128,3 +128,5 @@ public class Homework12 {
 
     }
 }
+
+
