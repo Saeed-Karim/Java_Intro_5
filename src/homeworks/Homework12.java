@@ -5,26 +5,26 @@ import java.util.Arrays;
 public class Homework12 {
     public static void main(String[] args) {
         System.out.println("-------------Task 1-------------\n");
-        System.out.println(noDigit("123Hello"));
+        System.out.println(noDigit("123Hello World149"));
 
 
         System.out.println("\n-------------Task 2-------------\n");
-        System.out.println(noVowel("xyz"));
+        System.out.println(noVowel("JAVA"));
 
 
 
         System.out.println("\n-------------Task 3-------------\n");
-        System.out.println(sumOfDigits("Java"));
+        System.out.println(sumOfDigits("John’s age is 29"));
 
 
 
         System.out.println("\n-------------Task 4-------------\n");
-        System.out.println(hasUpperCase("John's age is 29"));
+        System.out.println(hasUpperCase("java"));
 
 
 
         System.out.println("\n-------------Task 5-------------\n");
-        System.out.println(middleInt(1,1,1));
+        System.out.println(middleInt(5,3,5));
 
 
 
@@ -43,11 +43,15 @@ public class Homework12 {
 
     }
 
-    //Task1
-    public static String noDigit(String str){
-        String str1= "";
+    //Task 1
+    public static String noDigit(String str) {
+
+        String str1 = "";
+
         for (int i = 0; i < str.length(); i++) {
-            if(!Character.isDigit(str.charAt(i))) str += str1.charAt(i);
+            if (Character.isLetter(str.charAt(i))) {
+                str1 += str.charAt(i);
+            }
         }
         return str1;
     }
